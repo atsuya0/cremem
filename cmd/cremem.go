@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
+	"sort"
 	"strings"
 
 	"github.com/atsuya0/go-chooser"
@@ -60,6 +61,7 @@ func (c *cremem) remove() error {
 	if err != nil {
 		return fmt.Errorf(errMsg, err)
 	}
+	sort.Sort(sort.Reverse(sort.IntSlice(chosenCommandIndexes)))
 	for _, i := range chosenCommandIndexes {
 		c.commands = append(c.commands[:i:i], c.commands[i+1:]...)
 	}
