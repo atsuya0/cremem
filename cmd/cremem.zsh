@@ -1,6 +1,6 @@
 function cremem() {
   [[ $# -eq 0 ]] \
-    && eval $(command cremem show) \
+    && print -rz $(command cremem show) \
     || command cremem $@
 }
 
