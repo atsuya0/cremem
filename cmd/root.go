@@ -13,6 +13,7 @@ func NewCmd() *cobra.Command {
 	cmd.AddCommand(registerCmd())
 	cmd.AddCommand(showCmd())
 	cmd.AddCommand(removeCmd())
+	cmd.AddCommand(scriptCmd())
 	cmd.AddCommand(initCmd())
 
 	return cmd
