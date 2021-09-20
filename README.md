@@ -1,5 +1,5 @@
 # cremem
-A tool for recording and interactively executing commands.
+cremem is a tool for recording a command and interactively choosing and executing it.
 
 # Setup
 ## Load the zsh script
