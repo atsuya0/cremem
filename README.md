@@ -9,10 +9,10 @@ source <(cremem script)
 ```
 - Enable completion.
 - Register commands automatically.
-- Enable input to the prompt.
+- Enable input to the buffer.
 
 # Available Commands
-Choose a command and input it to the prompt.  
+Choose a command and input it to the buffer.  
 `$ cremem`
 ## register
 Register a command.  
